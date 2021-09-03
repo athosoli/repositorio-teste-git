@@ -4,7 +4,7 @@ import loc from '../../support/locators'
 
 context('Testar o Login', () => {
   beforeEach(() => {
-    cy.visit('https://siaf-plus-app-test.golerp.com.br/#!/integracao/fornecedor');
+    cy.visit('https://exemples.com.br/#!/integracao/fornecedor');
     cy.get(loc.login.user).type(`${Cypress.env('usuario')}`)//variavel e locators
     cy.get("[class=ng-scope]").should("contain", "ACESSAR")
     cy.get(loc.login.password).type('1234')//variavel e locators
